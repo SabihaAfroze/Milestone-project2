@@ -209,6 +209,81 @@ column-width: 100%;
   transform: scale(1.05); 
 }
 
+/*--contact--*/
+
+.contact-img {
+    width: 500px;
+    height: 360px;
+  }
+
+.form-width {
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #fafafa;
+  background-color: #bb5c92;
+}
+
+div .fa-paper-plane {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #bb5c92;
+}
+
+.form-control:focus {
+  border: 3px solid #bb5c92;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 !important;
+}
+
+.standard-button {
+    margin-top: 0.3rem;
+  }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  .about-height {
+    height: 269px;
+  }
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+.btn {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+
+
+
+
+
+
+
 
 
 /*-----------------------------Footer-----------*/
