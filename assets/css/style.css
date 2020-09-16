@@ -137,6 +137,44 @@ a:hover{
      color:#8a1011;}
 
 
+/*------css for about section-----*/
+
+h1{
+    font-family: 'Carter One', cursive;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    
+}
+
+p{
+    font-size: 23px;
+    width: 100%;
+    font-family: 'Courgette', cursive;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+#about{
+    background-color: #bb6d99a4;
+  color: black;
+  
+}
+.about-image1{
+    width:600px;
+    height:350px;
+    padding-left:60px;
+}
+
+.about-image2{
+    width:600px;
+    height:350px;
+    
+}
+
+
 /*-----------------------------Footer-----------*/
 
 
@@ -155,7 +193,7 @@ footer {
      text-align: center;
      margin-top: 40px;
  }
- 
+
   .social-links {
      padding-bottom: 15px;
  }
