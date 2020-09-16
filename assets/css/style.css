@@ -277,13 +277,6 @@ padding-right: 1.1rem;
 }
 
 
-
-
-
-
-
-
-
 /*-----------------------------Footer-----------*/
 
 
@@ -297,7 +290,7 @@ footer {
     
  }
 
- .footer-details {
+ #footer-details {
      padding:14px;
      text-align: center;
      margin-top: 40px;
