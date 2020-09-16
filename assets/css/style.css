@@ -135,3 +135,50 @@ a:hover{
      padding-top:40px;
      font-weight: bold;
      color:#8a1011;}
+
+
+/*-----------------------------Footer-----------*/
+
+
+footer {
+     background-color: #f5f0ec;
+     color: #bb5c92;
+     min-height: 60px;
+     margin: 0;
+     font-weight: bold;
+     font-family: 'Cambria Math', cursive;
+    
+ }
+
+ #footer-details {
+     padding:14px;
+     text-align: center;
+     margin-top: 40px;
+ }
+ 
+  .social-links {
+     padding-bottom: 15px;
+ }
+
+ .social-links li a i {
+     width:32px;
+     height:32px;
+     padding:12px 0;
+     border-radius: 25%;
+     font-size: 13px;
+     line-height: 7px;
+     text-align: center;
+     color:#fafafa;
+     background: #8a1011;
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+
+ }
+
+ .social-links li a i:hover {
+     background: #fecb6c;
+ }
+
+ 
