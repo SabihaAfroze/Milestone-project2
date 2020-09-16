@@ -68,7 +68,7 @@
                                 <div class="col text-center">
                                     <div class="fa fa-paper-plane"></div>
                                 </div>
-                            <form onsubmit="return sendMail(this);">
+                            <form onsubmit="return sendMail(this); method="POST">
                                 <div class="col mb-2">
                                     <input
                                         type="text"
@@ -115,7 +115,7 @@
     <!-- Footer -->
 
 <footer class="container-fluid">
-        <div id="footer-details" class="row">
+        <div class="footer-details row">
             <div class="col-12">
                 <h3 class="uppercase ">Let's get social!</h3>
                 <ul class="list-inline social-links">
@@ -170,6 +170,8 @@ var wow = new WOW(
 );
 wow.init();
 </script>
+
+<script src ="assets/js/sendemail.js"></script>
 
 </body>
 </html>

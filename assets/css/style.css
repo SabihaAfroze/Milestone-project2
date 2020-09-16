@@ -14,7 +14,7 @@ body{
 }
 
 
-				/*--css for menu in the navbar--*/
+	/*--css for menu in the navbar--*/
 
 .menu{
     margin-left: 450px;
@@ -212,8 +212,8 @@ column-width: 100%;
 /*--contact--*/
 
 .contact-img {
-    width: 500px;
-    height: 360px;
+    width: 200px;
+    height: 100px;
   }
 
 .form-width {
@@ -261,9 +261,7 @@ div .fa-paper-plane {
 
   
 
-  .about-height {
-    height: 269px;
-  }
+ 
 
 
 
@@ -299,7 +297,7 @@ footer {
     
  }
 
- #footer-details {
+ .footer-details {
      padding:14px;
      text-align: center;
      margin-top: 40px;
