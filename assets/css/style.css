@@ -16,35 +16,30 @@ body{
 
 	/*--css for menu in the navbar--*/
 
-.menu{
-    margin-left: 450px;
-    margin-top: 55px;
-}
+
 
 .menu-item{
     
     font-family: 'Cambria Math', cursive;
-    padding-right: 19px;
-    padding-left: 19px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    
     text-decoration: none;
     color: black;
 
 }
 
-.menu-container{
-    width: 100%;
+.menubar{
+   
     height: 90px;
     background-color: #f5f0ec;
     border: 0px;
     border-style: groove;
-    border-bottom: 1px rgba(186, 247, 255, 0.69);
-    overflow: hidden;
+    
+    
     position: fixed;
     left: 0;top: 0;
     right:0;
 }
+
 
 .menu-item:hover{
     background-color: rgba(255, 255, 255, 0.61);
@@ -64,16 +59,7 @@ body{
 
 /*--css for navbar--*/
 
-.navbar {
-    margin-bottom: 0;
-    width: 100%;
-    border: 0;
-    padding:0;
-    display:flex;
-    position: fixed;
-    
-    
-}
+
 
 .navbar-light {
     font-size: 17px;
@@ -89,6 +75,17 @@ body{
 
 }
 
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    border: 0;
+    padding:0;
+    display:flex;
+    position: fixed;
+    
+    
+}
+
 .navbar .navbar-toggler {
     border: 0;
 }
@@ -101,19 +98,23 @@ body{
     font-weight: bold;
 }
 
+.navbar-light .navbar-toggler {
+  border: transparent;
+  color: transparent;
+ 
+}
+
+
 /*--css for home section--*/
 
 .home{
     padding-top:90px;
 }
 
-.absolute{
-    position: absolute;
-    left: 0;right: 0;bottom: 0;top: 5;}
-}
+
 
 .car-image{
-    height:100px;
+    height:85vh;
 }
 
 a{
@@ -212,8 +213,8 @@ column-width: 100%;
 /*--contact--*/
 
 .contact-img {
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
   }
 
 .form-width {
