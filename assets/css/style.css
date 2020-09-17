@@ -219,11 +219,10 @@ column-width: 100%;
 
 /*--contact--*/
 
-.contact-img {
-    width: 400px;
-    height: 200px;
-  }
-
+.cimage{
+    width:400px;
+    height:200px;
+}
 .form-width {
   padding-top: 10px;
   margin: 0 auto;
