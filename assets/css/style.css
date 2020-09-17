@@ -21,10 +21,18 @@ body{
 .menu-item{
     
     font-family: 'Cambria Math', cursive;
-    
     text-decoration: none;
     color: black;
 
+}
+.magic{
+    background-color: #8a1011;
+   
+    border-style: groove;
+    border: 0px;
+    border: 0px;
+    border-radius: 50%;
+    cursor:pointer;
 }
 
 .menubar{
@@ -33,8 +41,6 @@ body{
     background-color: #f5f0ec;
     border: 0px;
     border-style: groove;
-    
-    
     position: fixed;
     left: 0;top: 0;
     right:0;
@@ -69,7 +75,7 @@ body{
     padding-top: 11px;
     padding-bottom: 11px;
     text-decoration: none;
-    color: black;
+    
     position: absolute;
     left: 0;right: 0;bottom: 0;top: 0;
 
