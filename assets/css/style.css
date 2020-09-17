@@ -26,7 +26,7 @@ body{
 
 }
 .magic{
-    background-color: #8a1011;
+    
    
     border-style: groove;
     border: 0px;
@@ -37,7 +37,7 @@ body{
 
 .menubar{
    
-    height: 90px;
+   
     background-color: #f5f0ec;
     border: 0px;
     border-style: groove;
@@ -56,8 +56,8 @@ body{
 
 
 .logo{
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     margin-left: 40px;
     padding-top: 0px;
     padding-bottom:10px;
@@ -88,6 +88,7 @@ body{
     padding:0;
     display:flex;
     position: fixed;
+    height:90px;
     
     
 }
@@ -114,7 +115,7 @@ body{
 /*--css for home section--*/
 
 .home{
-    padding-top:90px;
+    padding-top:80px;
 }
 
 
