@@ -9,6 +9,133 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <style>
+    
+    .alert-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    }
+    .quiz{
+
+        box-sizing: border-box;
+        padding-top:140px;
+        }
+        
+
+    .quiz-container {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px white;
+    padding: 3rem;
+    text-shadow: 0 1px #00000010;
+    width: 60%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(360deg, transparent, #ffffff);
+    min-height: 100vh;
+    }
+    .title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: #00000050;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    .question {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    }
+    .option {
+    padding: 1rem;
+    color: #00000095;
+    background: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    border-radius: 5px;
+    transition: all 0.3s;
+    }
+    .option:hover {
+    background: rgba(255, 255, 255, 0.4);
+    }
+    .option input:checked .option {
+    background: #08038c;
+    color: #000;
+    }
+    .controls > * {
+    margin: 1rem;
+    }
+    button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-weight: 300;
+    color: white;
+    outline: none;
+    transform: scale(0.98);
+    transition: all 0.2s;
+    }
+    button.previous {
+    background: #c84630;
+    }
+    button.next {
+    background: #3c91e6;
+    }
+    button.restart {
+    background: #0cf574;
+    color: #00000050;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.4s;
+    }
+    button.restart:hover {
+    color: #00000098;
+    }
+    button:hover,
+    button:focus {
+    transform: scale(1);
+    font-weight: 500;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    }
+    .result {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    min-height: 100vh;
+    }
+    .final-score {
+    color: #00000099;
+    }
+    .summary {
+    font-size: 1rem;
+    text-shadow: 1px 1px #ffffff50;
+    color: #00000099;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
+    .summary h1 {
+    align-self: center;
+    }
+
+
+    </style>
     <title>Crystal's|Wear the unique jewellery for your special day!</title>
 </head>
 
@@ -44,4 +171,277 @@
                 </div>
             </nav>
         </header>
+
+        <section class="container-fluid quiz">
+        <hr class="block block-blue" />
+        <div class="alert-wrapper">
+        <div class="alert alert-info">
+          <p class="text-center alert-status">
+            Hello luck lovers! Well I beleive in luck and luckygems. As jewellery designer, I designed a pendant with 
+            my lucky gems for myself which I carry always with me. So if anyone wants to know about your lucky gem then just answer 
+            the following questions and see the <span class="animate__animated animate__flash animate__infinite	infinite"style="background-color:#8a1011;color:white;">Magic</span>
+          </p>
+        </div>
+      </div>
+        <div class="quiz-container">
+        <div class="title">Know Your Gem</div>
+
+<div id="question" class="question"></div>
+        <label class="option">
+            <input type="radio" name="option" value="1" />
+            <span class="option1"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="2" />
+            <span class="option2"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="3" />
+            <span class="option3"></span>
+        </label>
+        <!-- Buttons -->
+        <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+    <div class="result">
+    
+        </section>
+
+     <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-12">
+                <h3 class="uppercase ">Let's get social!</h3>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/" >
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a target="_blank" href="https://www.twitter.com/" >
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a target="_blank" href="https://www.pinterest.com/" >
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                        <a target="_blank" href=" https://www.instagram.com/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/" >
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>     
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d455032431.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+</script>
+<script>
+
+// QUESTIONS
+
+const questions = [
+  {
+    "question": "Your birth date range?",
+    "answer1": "01-10",
+    "answer1Total": "1",
+    "answer2": "11 - 20",
+    "answer2Total": "2",
+    "answer3": "21-31",
+    "answer3Total": "3"
+  },
+  {
+    "question": "Your birth month range?",
+    "answer1": "January-April",
+    "answer1Total": "1",
+    "answer2": "May-August",
+    "answer2Total": "2",
+    "answer3": "September-December",
+    "answer3Total": "3"
+  },
+  {
+    "question":
+      "In which time of the day you have born?",
+    "answer1": "Sunrise-Afternoon",
+    "answer1Total": "1",
+    "answer2": "Afternoon-Sunset",
+    "answer2Total": "3",
+    "answer3": "Sunset-sunrise",
+    "answer3Total": "2"
+  },
+  {
+    "question": "Best Sentence to describe you?",
+    "answer1": "Confident",
+    "answer1Total": "3",
+    "answer2": "Creative",
+    "answer2Total": "2",
+    "answer3": "Fun-loving",
+    "answer3Total": "1"
+  },
+
+  {
+    "question": "Which of the following colours do you like most?",
+    "answer1": "Black",
+    "answer1Total": "1",
+    "answer2": "Blue or green",
+    "answer2Total": "2",
+    "answer3": "Red or orange",
+    "answer3Total": "3"
+  }
+]
+
+
+let currentQuestion = 0;
+let score = [];
+let selectedAnswersData = [];
+const totalQuestions =questions.length;
+var magic;
+
+const container = document.querySelector('.quiz-container');
+const questionEl = document.querySelector('.question');
+const option1 = document.querySelector('.option1');
+const option2 = document.querySelector('.option2');
+const option3 = document.querySelector('.option3');
+const nextButton = document.querySelector('.next');
+const previousButton = document.querySelector('.previous');
+const restartButton = document.querySelector('.restart');
+const result = document.querySelector('.result');
+
+//Function to generate question 
+function generateQuestions (index) {
+    //Select each question by passing it a particular index
+    const question = questions[index];
+    const option1Total = questions[index].answer1Total;
+    const option2Total = questions[index].answer2Total;
+    const option3Total = questions[index].answer3Total;
+    //Populate html elements 
+    questionEl.innerHTML = `${index + 1}. ${question.question}`
+    option1.setAttribute('data-total', `${option1Total}`);
+    option2.setAttribute('data-total', `${option2Total}`);
+    option3.setAttribute('data-total', `${option3Total}`);
+    option1.innerHTML = `${question.answer1}`
+    option2.innerHTML = `${question.answer2}`
+    option3.innerHTML = `${question.answer3}`
+}
+
+
+function loadNextQuestion () {
+    const selectedOption = document.querySelector('input[type="radio"]:checked');
+    //Check if there is a radio input checked
+    if(!selectedOption) {
+        alert('Please select your answer!');
+        return;
+    }
+    //Get value of selected radio
+    const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
+
+    ////Add the answer score to the score array
+    score.push(answerScore);
+
+    selectedAnswersData.push()
+    
+
+    const totalScore = score.reduce((total, currentNum) => total + currentNum);
+
+    function myFunction() {
+    const totalScore = score.reduce((total, currentNum) => total + currentNum);
+    if(totalScore<=8){
+        magic = "Ruby";
+        } else if (totalScore >8 && totalscore<13) {
+            magic = "Emerald";
+            } else {
+            magic = "Pearl";
+            }
+           document.getElementById("demo").innerHTML = magic; 
+           
+            }
+
+    //Finally we incement the current question number ( to be used as the index for each array)
+    currentQuestion++;
+
+        //once finished clear checked
+        selectedOption.checked = false;
+    //If quiz is on the final question
+    if(currentQuestion == totalQuestions - 1) {
+        nextButton.textContent = 'Finish';
+    }
+    //If the quiz is finished then we hide the questions container and show the results 
+    if(currentQuestion == totalQuestions) {
+        container.style.display = 'none';
+        result.innerHTML =
+         `
+         <div class="summary">
+            <h1>Your lucky gem is </h1>
+            <div id="demo" onclick="myFunction()"><p class="animate__animated animate__pulse" style="background-color:#8a1011;color:white;text-align:center;">Emerald</p></div>
+            
+        </div>
+        <button class="restart">Restart Quiz</button>
+         `;
+        return;
+    }
+    generateQuestions(currentQuestion);
+}
+
+//Function to load previous question
+function loadPreviousQuestion() {
+    //Decrement quentions index
+    currentQuestion--;
+    //remove last array value;
+    score.pop();
+    //Generate the question
+    generateQuestions(currentQuestion);
+}
+
+//Fuction to reset and restart the quiz;
+function restartQuiz(e) {
+    if(e.target.matches('button')) {
+    //reset array index and score
+    currentQuestion = 0;
+    score = [];
+    //Reload quiz to the start
+    location.reload();
+    }
+
+}
+
+
+generateQuestions(currentQuestion);
+nextButton.addEventListener('click', loadNextQuestion);
+previousButton.addEventListener('click',loadPreviousQuestion);
+result.addEventListener('click',restartQuiz);
+</script>
+
+
+   
+</body>
+</html>
+
     
